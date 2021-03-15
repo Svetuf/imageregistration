@@ -23,7 +23,8 @@ jobs:
         opencv-version: '3.4.0'
         
     - name: boost
-      run: sudo apt-get update && sudo apt-get install -yq libboost1.75-dev
+      run: sudo apt-get update && sudoapt-get install -yq libboost-all-dev
+
 
     - name: Create Build Environment
       # Some projects don't allow in-source building, so create a separate build directory
