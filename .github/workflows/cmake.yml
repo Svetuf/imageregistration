@@ -20,10 +20,13 @@ jobs:
     - name: Install OpenCV
       uses: Dovyski/setup-opencv-action@v1
       with:
-        opencv-version: '3.4.0'
+        opencv-version: '4.1.0'
         
-    - name: boost
-      run: sudo apt-get update && sudoapt-get install -yq libboost-all-dev
+    - name: Install boost
+      uses: MarkusJx/install-boost@v1.0.1
+      id: install-boost
+      with:
+        boost_version: 1.73.0
 
 
     - name: Create Build Environment
