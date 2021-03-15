@@ -17,6 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: run-cmake
+      uses: lukka/run-cmake@v3.3
+
     - name: Install OpenCV
       uses: Dovyski/setup-opencv-action@v1
       with:
